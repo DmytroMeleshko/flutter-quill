@@ -246,6 +246,9 @@ class RawEditorState extends EditorState
         RawEditorStateSelectionDelegateMixin {
   final GlobalKey _editorKey = GlobalKey();
 
+  @override
+  void performSelector(String selectorName) {}
+          
   KeyboardVisibilityController? _keyboardVisibilityController;
   StreamSubscription<bool>? _keyboardVisibilitySubscription;
   bool _keyboardVisible = false;
