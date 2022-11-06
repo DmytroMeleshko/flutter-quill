@@ -249,6 +249,9 @@ class RawEditorState extends EditorState
   @override
   void performSelector(String selectorName) {}
           
+  @override
+  void didChangeInputControl(TextInputControl? oldControl, TextInputControl? newControl) {}
+          
   KeyboardVisibilityController? _keyboardVisibilityController;
   StreamSubscription<bool>? _keyboardVisibilitySubscription;
   bool _keyboardVisible = false;
